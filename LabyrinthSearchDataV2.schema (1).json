@@ -1,0 +1,560 @@
+{
+  "id": 159119,
+  "num_rows": 100,
+  "file_format": "json",
+  "name": "LabyrinthSearchDataV2",
+  "array": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "title.value",
+      "null_percentage": 0,
+      "type": "Dataset Column",
+      "dataset": "truck data",
+      "column": "name",
+      "selectionStyle": "random",
+      "formula": ""
+    },
+    {
+      "name": "title.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "title.source.Id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "title.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "title.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "title.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "title.safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name",
+      "formula": ""
+    },
+    {
+      "name": "title.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "title.safety.word",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "title.safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "title.safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.value",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "Point"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": ""
+    },
+    {
+      "name": "__lat",
+      "null_percentage": 0,
+      "type": "Latitude",
+      "formula": ""
+    },
+    {
+      "name": "__long",
+      "null_percentage": 0,
+      "type": "Longitude",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].value",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "[__long.to_f, __lat.to_f]",
+      "formula": ""
+    },
+    {
+      "name": "descriptions",
+      "null_percentage": 0,
+      "type": "JSON Array",
+      "minItems": 1,
+      "maxItems": 2,
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.safety.specialcase[3]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "location_1.type.safety.limitations[3]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "url.value",
+      "null_percentage": 0,
+      "type": "Dataset Column",
+      "dataset": "truck data",
+      "column": "website",
+      "selectionStyle": "random",
+      "formula": ""
+    },
+    {
+      "name": "url.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "url.source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "url.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "url.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "url.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "url.safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "url.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "url.safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "url.safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "url.safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "location_1.coordinates[1].safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.value",
+      "null_percentage": 0,
+      "type": "Dataset Column",
+      "dataset": "bio dataset",
+      "column": null,
+      "selectionStyle": "random",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.description.safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.value",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.safety.addressee[2]",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.rating.safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 4,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.value",
+      "null_percentage": 0,
+      "type": "Dataset Column",
+      "dataset": "truck data",
+      "column": "category",
+      "selectionStyle": "random",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.source.name",
+      "null_percentage": 0,
+      "type": "City",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.source.id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.source.address",
+      "null_percentage": 0,
+      "type": "Street Address",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.source.consistency1",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.source.consistency2",
+      "null_percentage": 0,
+      "type": "Race",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.safety.addressee",
+      "null_percentage": 0,
+      "type": "First Name (Female)",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.safety.control[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.safety.word[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.safety.specialcase[2]",
+      "null_percentage": 0,
+      "type": "Buzzword",
+      "formula": ""
+    },
+    {
+      "name": "descriptions.category.safety.limitations[2]",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": ""
+    }
+  ]
+}
